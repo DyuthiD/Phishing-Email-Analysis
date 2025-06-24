@@ -8,8 +8,7 @@ The goal of this task was to analyze a sample phishing email and identify common
 ## 🛠 Tools Used
 - Free online phishing email sample
 - Online Email Header Analyzer (e.g., MXToolbox , EML Analyzer)
-- Virus
-- Text editor
+- Virustool Inspection
 
 ---
 
@@ -22,12 +21,11 @@ I used a free phishing email sample from online repositories. The email resemble
 
 | Indicator                      | Observation                                                                 |
 |-------------------------------|------------------------------------------------------------------------------|
-| 🧑‍💻 Sender Email Address      | The display name was "Bank Support" but the email was from a suspicious domain (`support@banksecure-alert.com`) |
+| 🧑‍💻 Sender Email Address      | The display name was "Bank Support" but the email was from a suspicious domain ) |
 | 🪪 Email Header Inspection     | SPF failed, and the return path domain did not match the sender domain     |
-| 🔗 Link Inspection             | Hyperlinks redirected to domains unrelated to the real bank (e.g., shortened URLs or typo-squatting domains) |
+| 🔗 Link Inspection             | Hyperlinks redirected to domains unrelated to the real bank  |
 | ⚠️ Language & Urgency          | Used scare tactics like "Your account will be locked in 24 hours"          |
 | 🔠 Spelling/Grammar Issues     | Multiple grammatical errors and formatting inconsistencies                  |
-| 📎 Attachments (if any)        | Dangerous file formats like `.zip` or `.exe` (not opened)                  |
 
 ---
 
@@ -48,8 +46,10 @@ I used a free phishing email sample from online repositories. The email resemble
 ---
 
 ## 📁 Files Included
-- `phishing_sample.txt`: The sample phishing email content
-- `phishing_analysis.png`: Screenshot of header analysis
+- `Phishing_Email_Analysis_Report.pdf`: Summary report listing phishing indicators found
+- `Sample_Phishing_email.eml`: The sample phishing email content
+- `EML_analyser.png`: Screenshot of header analysis using EML Analyzer
+- `Mxtoolbox_header_analysis.png`: Screenshot of header analysis using MXToolBox
 - `README.md`: Explanation of the task and what was done
 
 ---
